@@ -1,0 +1,33 @@
+.body {
+    font-family: "Montserrat";
+}
+
+.container {
+        position: fixed; /* Zmieniamy pozycjonowanie na fixed */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* 100% szerokości okna */
+        height: auto; /* Automatyczna wysokość */
+    
+      
+  }
+  .logo {
+    max-height: 100%;
+    transition: opacity 0.3s ease-in-out;
+    align-content: center; 
+    min-width: 360px;
+    max-width: 90%;
+   }
+
+    @media (min-width: 768px) {
+        .logo {
+            min-width: 768px;
+        }
+    }
+    @media (min-width: 1280px) {
+        .logo {min-width: 1280px;}
+    }
