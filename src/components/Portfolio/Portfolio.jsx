@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './portfolio.module.css';
-import spacePhoto from '../../pictures/no-photo.svg'
+// import spacePhoto from '../../pictures/no-photo.svg'
 
 const Portfolio = () => {
   return (
