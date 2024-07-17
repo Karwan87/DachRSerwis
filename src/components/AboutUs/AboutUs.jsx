@@ -10,7 +10,7 @@ const AboutUs = () => {
   <h1>Dach R Serwis</h1>
   <h1>Twoje Zaufane Źródło Profesjonalnych Usług Dekarskich i Ciesielskich</h1>
   <p>Z dumą przedstawiamy firmę Dach R Serwis, która od ponad 20 lat dostarcza najwyższej jakości usługi dekarskie i ciesielskie. Nasza firma łączy w sobie doświadczenie, precyzję oraz pasję do wykonywania prac na najwyższym poziomie. Dzięki naszemu zaangażowaniu i indywidualnemu podejściu do każdego projektu, zyskaliśmy zaufanie setek klientów.</p>
-  <h2>Dlaczego Warto Wybrać Dach R Serwis?</h2>
+  <h2>Dlaczego Warto Wybrać Dach R Serwis</h2>
   <div className={styles.tilesContainer}>
   <div className={styles.tile}><div className={styles.obj1}>DOŚWIADCZENIE</div><div className={styles.content1}>20 lat w branży dekarskiej i ciesielskiej</div></div>
   <div className={styles.tile}><div className={styles.obj2}>JAKOŚĆ</div><div className={styles.content2}>Stosowanie najlepszych matreriałów i najnowszej technologii</div></div>
