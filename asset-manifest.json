@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dachrserwis/static/css/main.720830d0.css",
-    "main.js": "/dachrserwis/static/js/main.c0351662.js",
+    "main.js": "/dachrserwis/static/js/main.0432fade.js",
     "static/media/Services2.jpg": "/dachrserwis/static/media/Services2.17e8e869e33786359d60.jpg",
     "static/media/Services1.jpg": "/dachrserwis/static/media/Services1.7751fffd76d0b0ddb3ef.jpg",
     "static/media/jawor_panorama2.jpg": "/dachrserwis/static/media/jawor_panorama2.869300082b05865d5633.jpg",
@@ -21,10 +21,10 @@
     "static/media/montserrat-vietnamese-400-normal.woff2": "/dachrserwis/static/media/montserrat-vietnamese-400-normal.176348415471f3e062e6.woff2",
     "index.html": "/dachrserwis/index.html",
     "main.720830d0.css.map": "/dachrserwis/static/css/main.720830d0.css.map",
-    "main.c0351662.js.map": "/dachrserwis/static/js/main.c0351662.js.map"
+    "main.0432fade.js.map": "/dachrserwis/static/js/main.0432fade.js.map"
   },
   "entrypoints": [
     "static/css/main.720830d0.css",
-    "static/js/main.c0351662.js"
+    "static/js/main.0432fade.js"
   ]
 }
