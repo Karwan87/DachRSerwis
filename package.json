@@ -2,7 +2,7 @@
   "name": "dachrserwis",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://karwan87.github.io/dachrserwis/",
+  "homepage": "https://karwan87.github.io/DachRSerwis/",
   "dependencies": {
     "@fontsource/montserrat": "^5.0.18",
     "@testing-library/jest-dom": "^6.4.6",
