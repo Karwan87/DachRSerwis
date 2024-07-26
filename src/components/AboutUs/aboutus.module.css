@@ -5,7 +5,7 @@
 .aboutusContainer {
     position: relative;
     bottom: -1400px;
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,218 +46,156 @@
     text-align: center;
 }
 
-.tilesContainer {
+.box_container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
+    justify-content: center;
+    max-height: 100%;
+    }
 
-.tile1 {
-    display: flex;
+.box_experience {
     font-family: "Montserrat";
-    /* background-color: rgba(255, 255, 255, 1.0); */
     background-image: url(../../pictures/Certyfikaty.png);
-    background-size:  cover;
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
     background-position: center;
-    padding: 20px;
-    width: calc(20% - 20px);
-    min-height: 200px;
-    min-width: 200px;
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    height: 250px;
+    max-width: 80%;
     transition: transform 0.3s ease-in-out;
-    margin-bottom: 45px;
     justify-content: center;
     align-items: center;
     text-align: center;
     cursor: pointer;
-    /* border-radius: 50px; */
 }
 
-.tile2 {
-    display: flex;
+.box_quality {
     font-family: "Montserrat";
-    /* background-color: rgba(255, 255, 255, 1.0); */
     background-image: url(../../pictures/Nasze\ dachy.png);
-    background-size: cover ;
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
     background-position: center;
-    padding: 20px;
-    width: calc(20% - 20px);
-    min-height: 250px;
-    min-width: 250px;
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    height: 250px;
+    max-width: 80%;
     transition: transform 0.3s ease-in-out;
-    margin-bottom: 45px;
     justify-content: center;
     align-items: center;
     text-align: center;
     cursor: pointer;
-    /* border-radius: 50px; */
 }
 
-.tile3 {
-    display: flex;
+.box_professionalism {
     font-family: "Montserrat";
-    /* background-color: rgba(255, 255, 255, 1.0); */
     background-image: url(../../pictures/ikona-nowa-z-22.png);
-    background-size:  cover;
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
     background-position: center;
-    padding: 20px;
-    width: calc(20% - 20px);
-    min-height: 250px;
-    min-width: 250px;
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    height: 250px;
+    max-width: 80%;
     transition: transform 0.3s ease-in-out;
-    margin-bottom: 45px;
     justify-content: center;
     align-items: center;
     text-align: center;
     cursor: pointer;
-    /* border-radius: 50px; */
 }
 
-.tile4 {
-    display: flex;
+.box_trust {
     font-family: "Montserrat";
-    /* background-color: rgba(255, 255, 255, 1.0); */
     background-image: url(../../pictures/O\ nas.png);
-    background-size:  cover;
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
     background-position: center;
-    padding: 20px;
-    width: calc(20% - 20px);
-    min-height: 250px;
-    min-width: 250px;
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    height: 250px;
+    max-width: 80%;
     transition: transform 0.3s ease-in-out;
-    margin-bottom: 45px;
     justify-content: center;
     align-items: center;
     text-align: center;
     cursor: pointer;
-    /* border-radius: 50px; */
 }
 
-
-
-.content1 {
-    display: none;
+.box_content {
+    visibility: hidden;
     /* width: 100%;
     height: 100%; */
     /* background-image: url(../../pictures/Certyfikaty.png); */
     background-size:  cover;
     background-position: center;
-}
-
-.content2 {
-    display: none;
-    /* width: 100%;
-    height: 100%; */
-    /* background-image: url(../../pictures/Nasze\ dachy.png); */
-    background-size: cover ;
-    background-position: center;
-}
-
-.content3 {
-    display: none;
-    /* width: 100%;
-    height: 100%; */
-    /* background-image: url(../../pictures/ikona-nowa-z-22.png); */
-    background-size: cover ;
-    background-position: center;
-}
-
-.content4 {
-    display: none;
-    /* width: 100%;
-    height: 100%; */
-    /* background-image: url(../../pictures/O\ nas.png); */
-    background-size: cover ;
-    background-position: center;
-}
-
-.obj1 {
-    display: none;
-}
-
-.obj2 {
-    display: none;
-}
-
-.obj3 {
-    display: none;
-}
-
-.obj4 {
-    display: none;
-}
-
-.tile1:hover .obj1 {
-    display: none;
-}
-.tile2:hover .obj2 {
-    display: none;
-}
-.tile3:hover .obj3 {
-    display: none;
-}
-.tile4:hover .obj4 {
-    display: none;
-}
-
-.tile1:hover .content1 {
-    display: block;
-    font-family: "Montserrat";
-}
-
-.tile2:hover .content2 {
-    display: block;
-    font-family: "Montserrat";
-}
-.tile3:hover .content3 {
-    display: block;
-    font-family: "Montserrat";
-}
-.tile4:hover .content4 {
-    display: block;
-    font-family: "Montserrat";
-}
-
-.tile1:hover {
-    transform: translateY(-10px);
-    transform: scale(1.3); 
-    font-weight: bold; 
-    text-shadow: 1px 1px #99999b;
-    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-    /* border-radius: 50px; */
+    align-content: center;
     
 }
 
-.tile2:hover {
+.box_description {
+    display: none;
+}
+
+.box_experience:hover .box_description {
+    display: none;
+}
+.box_quality:hover .box_description {
+    display: none;
+}
+.box_professionalism:hover .box_description {
+    display: none;
+}
+.box_trust:hover .box_description {
+    display: none;
+}
+
+.box_experience:hover .box_content {
+    visibility: visible;
+    font-family: "Montserrat";
+}
+
+.box_quality:hover .box_content {
+    visibility: visible;
+    font-family: "Montserrat";
+}
+.box_professionalism:hover .box_content {
+    visibility: visible;
+    font-family: "Montserrat";
+}
+.box_trust:hover .box_content {
+    visibility: visible;
+    font-family: "Montserrat";
+}
+
+.box_experience:hover {
     transform: translateY(-10px);
-    transform: scale(1.3); 
+    transform: scale(1.2); 
     font-weight: bold; 
     text-shadow: 1px 1px #99999b;
     transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-    /* border-radius: 50px; */
+    
+    }
+
+.box_quality:hover {
+    transform: translateY(-10px);
+    transform: scale(1.2); 
+    font-weight: bold; 
+    text-shadow: 1px 1px #99999b;
+    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    
     
 }
 
-.tile3:hover {
+.box_professionalism:hover {
     transform: translateY(-10px);
-    transform: scale(1.3); 
+    transform: scale(1.2); 
     font-weight: bold; 
     text-shadow: 1px 1px #99999b;
     transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-    /* border-radius: 50px; */
+  
     
 }
 
-.tile4:hover {
+.box_trust:hover {
     transform: translateY(-10px);
-    transform: scale(1.3); 
+    transform: scale(1.2); 
     font-weight: bold; 
     text-shadow: 1px 1px #99999b;
     transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-    /* border-radius: 50px; */
+    
     
 }
 
@@ -276,6 +214,24 @@
         font-size: 24px;
         max-width: 1279px;
     }
+
+                .box_container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around; /* Rozmieszcza elementy równomiernie w poziomie */
+                    align-items: center; /* Centruje elementy w pionie */
+                    max-width: 100%;
+                    border: 1px solid red; /* linia pomocnicza siatki */
+                    padding: 20px; /* Dodaje padding wewnętrzny kontenera */
+                    box-sizing: border-box; /* Uwzględnia padding w szerokości kontenera */
+                }
+                
+                .box_container > div {
+                    flex: 1 1 45%; /* Ustawia szerokość elementów wewnętrznych na około 45% */
+                    border: 1px solid blue; /* linia pomocnicza siatki */
+                    margin: 10px; /* Dodaje margines do elementów wewnętrznych */
+                    box-sizing: border-box; /* Uwzględnia padding i border w szerokości elementu */
+                }
 }
 
 @media (min-width: 1280px) {
@@ -285,6 +241,36 @@
     }
     .details {
         font-size: 36px;
-        max-width: 1480px;
+        max-width: 100%;
     }
+    .box_container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        min-width: 100%;
+        border: 1px solid red; /* linia pomocnicza siatki */
+    }
+    .box_container > div {
+        flex: 0 0 20%; /* Ustawia równą szerokość dla wszystkich elementów */
+        max-width: 20%; /* Zapewnia, że każdy element ma szerokość 25% */
+        box-sizing: border-box; /* Uwzględnia padding i border w szerokości elementu */
+                 background-position: center;
+                border: 1px solid blue; /* linia pomocnicza siatki */
+    }
+    .box_experience {
+        background-size:contain;
+    }
+    .box_professionalism { 
+        background-size:contain;
+    }
+    .box_quality { 
+        background-size:contain;
+    }
+.box_trust { 
+    background-size:contain;
+}
+
 }
