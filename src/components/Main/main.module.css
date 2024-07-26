@@ -20,14 +20,11 @@
     transition: opacity 0.3s ease-in-out;
     align-content: center; 
     min-width: 360px;
-    max-width: 90%;
+    max-width: 80%;
    }
 
     @media (min-width: 768px) {
         .logo {
-            min-width: 768px;
+            max-width: 80%;
         }
-    }
-    @media (min-width: 1280px) {
-        .logo {min-width: 1280px;}
     }
