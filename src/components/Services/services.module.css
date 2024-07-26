@@ -27,7 +27,7 @@
     max-width: 1279px;
 }
 
-.oferty {
+.offers {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@
     margin-bottom: 40px;
 
 }
-.oferta1 {
+.offer_first {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +43,7 @@
     margin-bottom: 40px;
     
 }
-.oferta2 {
+.offer_second {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,17 +102,17 @@
         max-width: 1480px;
         line-height: 170%;
     }
-    .oferty {
+    .offers {
         display:grid;
         grid-column: auto;
         justify-content: space-around;
     }
-    .oferta1 {
+    .offer_first {
         display: flex;
         flex-direction:row;
         width: 90%;
     }
-    .oferta2 {
+    .offer_second {
         display: flex;
         flex-direction:row-reverse;
         width: 90%;
