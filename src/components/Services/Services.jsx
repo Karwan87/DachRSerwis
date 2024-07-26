@@ -11,8 +11,8 @@ const Services = () => {
         <div className={styles.servicesContainer}>
             <div className={styles.title}>Usługi</div>
             <div className={styles.details}>
-                <div className={styles.oferty}>
-                <div className={styles.oferta1}>
+                <div className={styles.offers}>
+                <div className={styles.offer_first}>
                     <img src={Services1} alt="Oferta Dekarska" className={styles.imageLeft} />
                     <div className={styles.text}>
                         <h2>Oferta Dekarska</h2>
@@ -31,7 +31,7 @@ const Services = () => {
                     </div>
                     </div>
                
-                    <div className={styles.oferta2}>
+                    <div className={styles.offer_second}>
                     <img src={Services2} alt="Oferta Ciesielska" className={styles.imageRight} />
                     <div className={styles.text}>
                         <h2>Oferta Ciesielska</h2>
