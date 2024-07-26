@@ -5,7 +5,9 @@ import "@fontsource/montserrat";
 const Header = () => {
     return (
         <div className={styles.headerContainer}>
-            <div className={styles.title}>R</div>
+            
+            <a href="/DachRSerwis" className={styles.link}>R</a>
+
             <div className={styles.contact}>
             <div className={styles.mail_contact}>
         <div className={styles.title}>Email:  </div>
