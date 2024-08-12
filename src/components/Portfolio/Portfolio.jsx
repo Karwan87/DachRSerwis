@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from './portfolio.module.css';
 // import spacePhoto from '../../pictures/no-photo.svg'
 
 const Portfolio = () => {
+  useEffect(() => {
+    const portfolioSection = document.getElementById('portfolio-section');
+    if (portfolioSection) {
+        portfolioSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}, []);
   return (
-    <div className={styles.portfolioContainer}>
+    <div id="portfolio-section" className={styles.portfolioContainer}>
       <div><h1>Portfolio</h1></div>
       <div className={styles.portfolioImage}>
       <img src="https://i.ibb.co/qJmvD1L/Dach1-1.jpg" alt="Dach1-1" />
