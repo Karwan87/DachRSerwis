@@ -1,14 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from './contact.module.css';
 import "@fontsource/montserrat";
 const Contact = () => {
+    useEffect(() => {
+        const contactSection = document.getElementById('contact-section');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
     return (
         <div className={styles.contactContainer}>
-        {/* <div className={styles.details}>Tutaj powinny znaleźć się wszelkie dane kontaktowe, adres, nazwa firmy, REGON, NIP, firma zaznaczona na mapie, itd.
-            <p>Wszystko będzie wymagało dodatkowego stylowania - jak będą podane dane, to ładnie to obrobię.</p>
-            <p>Do zakładki należy podpiąć jeszcze formularz kontaktowy, za pomocą którego można będzie wysłać maila z zapytaniem na konkretny adres mailowy.</p>
-        </div> */}
-        <div className={styles.contactSection}>
+     
+        <div id="contact-section" className={styles.contactSection}>
         <div className={styles.title}>
             <h1>Kontakt</h1>
             <p>DACH RSERWIS ROMAN SZELIGA</p>
