@@ -1,17 +1,10 @@
 .nav {
-    position: fixed;
+  display: flex;
     width: 100%;
-    bottom: -910px; /* Ukrycie nawigacji na początku */
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    opacity: 0;
-    transition: transform 0.3s ease-in-out, bottom 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Dodanie transition dla transform i bottom */
-    
-    pointer-events: none;
-  }
+    z-index: 9;
+    background: white;
+    box-shadow: 14px 12px 12px 6px rgba(100, 88, 88, 0.5);
+   }
   .nav.visible {
     opacity: 1;
     pointer-events: auto;
@@ -20,7 +13,6 @@
   .nav.hidden {
     opacity: 0;
     pointer-events: none;
-    bottom: -910px;
   }
   
   .navList {
@@ -75,7 +67,6 @@
        
         bottom: 10%;} 
   }
-  /* Media query to show the navigation on scroll */
   @media (min-height: 100vh) {
     body {
       height: 135vh;
