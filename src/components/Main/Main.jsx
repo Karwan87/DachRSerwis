@@ -8,7 +8,7 @@ import "@fontsource/montserrat";
 const Main = () => {
     const [logo, setLogo] = useState(mobileLogo);
     const [scrollOpacity, setScrollOpacity] = useState(1);
-    const opacityThreshold = 300; // Próg scrollowania w pikselach
+    const opacityThreshold = 100; // Próg scrollowania w pikselach
 
     const updateLogo = () => {
     const width = window.innerWidth;
