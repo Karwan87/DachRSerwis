@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from './services.module.css';
 import "@fontsource/montserrat";
 
@@ -7,9 +7,15 @@ import Services1 from '../../pictures/Services1.jpg';
 import Services2 from '../../pictures/Services2.jpg';
 
 const Services = () => {
+    useEffect(() => {
+        const servicesSection = document.getElementById('services-section');
+        if (servicesSection) {
+            servicesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
     return (
-        <div className={styles.servicesContainer}>
-            <div className={styles.title}>Usługi</div>
+        <div id="services-section" className={styles.servicesContainer}>
+            <div  className={styles.title}>Usługi</div>
             <div className={styles.details}>
                 <div className={styles.offers}>
                 <div className={styles.offer_first}>
