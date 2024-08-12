@@ -4,15 +4,13 @@
 
 .aboutusContainer {
     position: relative;
-    bottom: -1400px;
+    bottom: -1000px;
     width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 20px;
-    margin: 0 auto;
     z-index: 1;
 }
 
@@ -28,6 +26,7 @@
 }
 
 .title {
+    margin-top: 200px;
     font-family: "Montserrat";
     font-size: 36px;
     min-width: 360px;

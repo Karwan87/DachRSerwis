@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from './aboutus.module.css';
 import "@fontsource/montserrat";
 
 const AboutUs = () => {
+  useEffect(() => {
+    const aboutUsSection = document.getElementById('aboutUs-section');
+    if (aboutUsSection) {
+        aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}, []);
     return (
-        <div className={styles.aboutusContainer}>
+        <div id="aboutus-section" className={styles.aboutusContainer}>
         <div className={styles.title}>O nas</div>
         <div className={styles.details}>
   <h1>Dach R Serwis</h1>
