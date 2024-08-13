@@ -45,72 +45,111 @@
     text-align: center;
 }
 
-.box_container {
+.aboutus_container {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid blue; 
     gap: 20px;
     justify-content: center;
-    max-height: 100%;
+    height: 100%;
+    padding: 20px 0;
     }
 
-.box_experience {
+.box {
+    display: flex;
+    flex-direction: column;
     font-family: "Montserrat";
-    /* background-image: url(../../pictures/Certyfikaty.png); */
-    background-repeat: no-repeat;
-    background-size: 250px 250px;
-    background-position: center;
-    height: 250px;
-    max-width: 80%;
+    border: 1px solid red; 
+    height: 100%;
+    width: 80%;
     transition: transform 0.3s ease-in-out;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     cursor: pointer;
 }
-
-.box_quality {
-    font-family: "Montserrat";
-    /* background-image: url(../../pictures/Nasze\ dachy.png); */
-    background-repeat: no-repeat;
-    background-size: 250px 250px;
-    background-position: center;
-    height: 250px;
-    max-width: 80%;
-    transition: transform 0.3s ease-in-out;
-    justify-content: center;
-    align-items: center;
+.box_title {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    border: 1px solid red; 
+    font-size: 24px;
+    padding: 10px 0;
+    font-weight: bolder;
+    transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+.box_title:hover {
     cursor: pointer;
+    transform: scale(1.1);
+}
+.box_content {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
 }
 
-.box_professionalism {
-    font-family: "Montserrat";
-    /* background-image: url(../../pictures/ikona-nowa-z-22.png); */
-    background-repeat: no-repeat;
-    background-size: 250px 250px;
-    background-position: center;
-    height: 250px;
-    max-width: 80%;
-    transition: transform 0.3s ease-in-out;
-    justify-content: center;
+.experience_icon {
+    display: flex;
     align-items: center;
-    text-align: center;
-    cursor: pointer;
+    justify-content: center;
+    border: 1px solid red; 
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, font-weight 0.3s ease;
 }
-
-.box_trust {
-    font-family: "Montserrat";
-    /* background-image: url(../../pictures/O\ nas.png); */
-    background-repeat: no-repeat;
-    background-size: 250px 250px;
-    background-position: center;
-    height: 250px;
-    max-width: 80%;
-    transition: transform 0.3s ease-in-out;
+.experience_icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.quality_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red; 
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+.quality_icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.professionalism_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red; 
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+.professionalism_icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.trust_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red; 
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+.trust_icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.box_description {
+    font-size: 12px;
+    border: 1px solid red; 
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 100%;
+    transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+.box_description:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 @media (min-width: 768px) {
@@ -123,7 +162,7 @@
         max-width: 1279px;
     }
 
-                .box_container {
+                .aboutus_container {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-around; /* Rozmieszcza elementy równomiernie w poziomie */
@@ -134,11 +173,15 @@
                     box-sizing: border-box; /* Uwzględnia padding w szerokości kontenera */
                 }
                 
-                .box_container > div {
-                    flex: 1 1 45%; /* Ustawia szerokość elementów wewnętrznych na około 45% */
-                    border: 1px solid blue; /* linia pomocnicza siatki */
-                    margin: 10px; /* Dodaje margines do elementów wewnętrznych */
-                    box-sizing: border-box; /* Uwzględnia padding i border w szerokości elementu */
+                .experience_icon, 
+                .quality_icon,
+                .professionalism_icon,
+                .trust_icon {
+                    width: 100px;
+                    height: 100px;
+                }
+                .box_description{
+                    font-size: 16px;
                 }
 }
 
@@ -151,34 +194,28 @@
         font-size: 36px;
         max-width: 100%;
     }
-    .box_container {
+    .box_title {
+        font-size: 42px;
+    }
+    .aboutus_container {
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        min-width: 100%;
-        border: 1px solid red; /* linia pomocnicza siatki */
+        flex-direction: column;
+        
     }
-    .box_container > div {
-        flex: 0 0 20%; /* Ustawia równą szerokość dla wszystkich elementów */
-        max-width: 20%; /* Zapewnia, że każdy element ma szerokość 25% */
-        box-sizing: border-box; /* Uwzględnia padding i border w szerokości elementu */
-                 background-position: center;
-                border: 1px solid blue; /* linia pomocnicza siatki */
-    }
-    .box_experience {
-        background-size:contain;
-    }
-    .box_professionalism { 
-        background-size:contain;
-    }
-    .box_quality { 
-        background-size:contain;
-    }
-.box_trust { 
-    background-size:contain;
-}
+    .experience_icon, 
+    .quality_icon,
+    .professionalism_icon,
+    .trust_icon {
+                    width: 250px;
+                    height: 250px;
+                }
+                .box_description{
+                    font-size: 32px;
+                }
+                .aboutus_container .box:nth-child(2n) .box_content {
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+  
 
 }
