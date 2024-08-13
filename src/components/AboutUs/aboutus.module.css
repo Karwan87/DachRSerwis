@@ -55,7 +55,7 @@
 
 .box_experience {
     font-family: "Montserrat";
-    background-image: url(../../pictures/Certyfikaty.png);
+    /* background-image: url(../../pictures/Certyfikaty.png); */
     background-repeat: no-repeat;
     background-size: 250px 250px;
     background-position: center;
@@ -70,7 +70,7 @@
 
 .box_quality {
     font-family: "Montserrat";
-    background-image: url(../../pictures/Nasze\ dachy.png);
+    /* background-image: url(../../pictures/Nasze\ dachy.png); */
     background-repeat: no-repeat;
     background-size: 250px 250px;
     background-position: center;
@@ -85,7 +85,7 @@
 
 .box_professionalism {
     font-family: "Montserrat";
-    background-image: url(../../pictures/ikona-nowa-z-22.png);
+    /* background-image: url(../../pictures/ikona-nowa-z-22.png); */
     background-repeat: no-repeat;
     background-size: 250px 250px;
     background-position: center;
@@ -100,7 +100,7 @@
 
 .box_trust {
     font-family: "Montserrat";
-    background-image: url(../../pictures/O\ nas.png);
+    /* background-image: url(../../pictures/O\ nas.png); */
     background-repeat: no-repeat;
     background-size: 250px 250px;
     background-position: center;
@@ -112,97 +112,6 @@
     text-align: center;
     cursor: pointer;
 }
-
-.box_content {
-    visibility: hidden;
-    /* width: 100%;
-    height: 100%; */
-    /* background-image: url(../../pictures/Certyfikaty.png); */
-    background-size:  cover;
-    background-position: center;
-    align-content: center;
-    
-}
-
-.box_description {
-    display: none;
-}
-
-.box_experience:hover .box_description {
-    display: none;
-}
-.box_quality:hover .box_description {
-    display: none;
-}
-.box_professionalism:hover .box_description {
-    display: none;
-}
-.box_trust:hover .box_description {
-    display: none;
-}
-
-.box_experience:hover .box_content {
-    visibility: visible;
-    font-family: "Montserrat";
-}
-
-.box_quality:hover .box_content {
-    visibility: visible;
-    font-family: "Montserrat";
-}
-.box_professionalism:hover .box_content {
-    visibility: visible;
-    font-family: "Montserrat";
-}
-.box_trust:hover .box_content {
-    visibility: visible;
-    font-family: "Montserrat";
-}
-
-.box_experience:hover {
-    transform: translateY(-10px);
-    transform: scale(1.2); 
-    font-weight: bold; 
-    text-shadow: 1px 1px #99999b;
-    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-    
-    }
-
-.box_quality:hover {
-    transform: translateY(-10px);
-    transform: scale(1.2); 
-    font-weight: bold; 
-    text-shadow: 1px 1px #99999b;
-    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-    
-    
-}
-
-.box_professionalism:hover {
-    transform: translateY(-10px);
-    transform: scale(1.2); 
-    font-weight: bold; 
-    text-shadow: 1px 1px #99999b;
-    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-  
-    
-}
-
-.box_trust:hover {
-    transform: translateY(-10px);
-    transform: scale(1.2); 
-    font-weight: bold; 
-    text-shadow: 1px 1px #99999b;
-    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-    
-    
-}
-
-.over:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out; 
-}
-
 
 @media (min-width: 768px) {
     .title {
