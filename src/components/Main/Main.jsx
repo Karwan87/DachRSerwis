@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { useLocation } from "react-router-dom";
 import styles from './main.module.css';
 import mobileLogo from '../../pictures/DachRserwis desktop LOGO.jpg';
 import tabletLogo from '../../pictures/DachRserwis desktop LOGO.jpg';
@@ -8,7 +9,8 @@ import "@fontsource/montserrat";
 const Main = () => {
     const [logo, setLogo] = useState(mobileLogo);
     const [scrollOpacity, setScrollOpacity] = useState(1);
-    const opacityThreshold = 100; // Próg scrollowania w pikselach
+    const location = useLocation(); 
+    const opacityThreshold = 100; 
 
     const updateLogo = () => {
     const width = window.innerWidth;
@@ -27,17 +29,28 @@ const handleScroll = () => {
         setScrollOpacity(newOpacity);
     };
 
-useEffect(() => {
-    updateLogo();
-    window.addEventListener('resize', updateLogo);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('resize', updateLogo);
-    // window.removeEventListener('scroll', handleScroll);
-  }, []);
+    useEffect(() => {
+        updateLogo();
+        window.addEventListener('resize', updateLogo);
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('resize', updateLogo);
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            document.body.style.overflow = 'hidden'; 
+        } else {
+            document.body.style.overflow = 'auto'; 
+        }
+    }, [location.pathname]); 
 
     return (
         <div className={styles.container}>
-            <img src={logo} alt="Logo" className={styles.logo} style={{opacity: scrollOpacity}}/>
+            <img src={logo} alt="Logo" className={styles.logo} style={{opacity: scrollOpacity}} />
         </div>
     );
 };
