@@ -28,21 +28,25 @@
 .title {
     margin-top: 200px;
     font-family: "Montserrat";
-    font-size: 36px;
+    font-size: 16px;
     min-width: 360px;
     max-width: 480px;
+    line-height: 1.5;
 }
 .content {
+    font-size: 18px;
     width: 100%;
-    border: 1px solid blue; 
+    /* border: 1px solid blue;  */
+    line-height: 1.5;
 }
 
 .details {
     font-family: "Montserrat";
-    font-size: 16px;
+    font-size: 12px;
     min-width: 360px;
     max-width: 480px;
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
+    line-height: 1.5;
 }
 
 .list {
@@ -53,7 +57,7 @@
 .aboutus_container {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid blue; 
+    /* border: 1px solid blue;  */
     gap: 20px;
     justify-content: center;
     height: 100%;
@@ -64,7 +68,7 @@
     display: flex;
     flex-direction: column;
     font-family: "Montserrat";
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
     height: 100%;
     width: 80%;
     transition: transform 0.3s ease, font-weight 0.3s ease;
@@ -88,6 +92,7 @@
 
 .box_content {
     display: flex;
+    max-height: 250px;
     gap: 20px;
     padding: 10px;
     transition: transform 0.3s ease, font-weight 0.3s ease;
@@ -99,7 +104,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid red; 
-    width: 80px;
+    min-width: 80px;
     height: 80px;
     transition: transform 0.3s ease, font-weight 0.3s ease;
 }
@@ -109,7 +114,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid red; 
-    width: 80px;
+    min-width: 80px;
     height: 80px;
     transition: transform 0.3s ease, font-weight 0.3s ease;
 }
@@ -119,7 +124,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid red; 
-    width: 80px;
+    min-width: 80px;
     height: 80px;
     transition: transform 0.3s ease, font-weight 0.3s ease;
 }
@@ -129,7 +134,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid red; 
-    width: 80px;
+    min-width: 80px;
     height: 80px;
     transition: transform 0.3s ease, font-weight 0.3s ease;
 }
@@ -140,13 +145,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     transition: transform 0.3s ease, font-weight 0.3s ease;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
     .title {
-        font-size: 48px;
+        font-size: 24px;
         max-width: 1279px;
         margin-top: 150px;
     }
@@ -155,10 +160,10 @@
         flex-direction: column;
         max-width: 80%;
         margin: auto;
-        
+        font-size: 18px;
     }
     .details {
-        font-size: 24px;
+        font-size: 22px;
         max-width: 1279px;
     }
 
@@ -177,7 +182,7 @@
                 .quality_icon,
                 .professionalism_icon,
                 .trust_icon {
-                    width: 100px;
+                    min-width: 100px;
                     height: 100px;
                 }
                 .box_description{
@@ -187,11 +192,14 @@
 
 @media (min-width: 1280px) {
     .title {
-        font-size: 64px;
+        font-size: 36px;
         max-width: 1480px;
     }
+    .content {
+        font-size: 20px;
+    }
     .details {
-        font-size: 36px;
+        font-size: 20px;
         max-width: 100%;
     }
     .box_title {
@@ -206,11 +214,12 @@
     .quality_icon,
     .professionalism_icon,
     .trust_icon {
-                    width: 250px;
+                    min-width: 250px;
                     height: 250px;
                 }
                 .box_description{
                     font-size: 32px;
+                    height: 250px;
                 }
                 .aboutus_container .box:nth-child(2n) .box_content {
                     display: flex;
@@ -218,4 +227,7 @@
                 }
   
 
+}
+h1, h2, h3 {
+    font-weight: bold;
 }
