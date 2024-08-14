@@ -3,16 +3,6 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-top: 62px;
     z-index: 20;
     }
-    @media (min-width: 768px) {
-        .layout {
-            margin-top: 92px;
-        }
-    }
-    @media (min-width: 1280px) {
-        .layout {
-            margin-top: 134px;
-        }
-    }
+   
