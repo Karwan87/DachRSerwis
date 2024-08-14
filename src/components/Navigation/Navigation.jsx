@@ -1,32 +1,55 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {useNavigate, useLocation} from 'react-router-dom';
 import styles from './navigation.module.css';
 import "@fontsource/montserrat"
 
 const Navigation = () => {
+  const [isNavVisible, setIsNavVisible] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsNavVisible(true); 
+      } else {
+        setIsNavVisible(false); 
+      }
+    };
+
+    handleResize(); 
+    window.addEventListener('resize', handleResize); 
+
+    return () => window.removeEventListener('resize', handleResize); 
+  }, []);
+
   const handleClick = (path, sectionId) => {
     if (location.pathname === path) {
-      // Jeśli już jesteśmy na odpowiedniej stronie, przewiń do sekcji
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // Przekieruj do odpowiedniej strony i przewiń do sekcji po załadowaniu
       navigate(path);
       setTimeout(() => {
         const section = document.getElementById(sectionId);
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 100); // Mała przerwa na załadowanie strony
+      }, 200); 
+    }
+    if (window.innerWidth < 768) {
+      toggleNavVisibility(); 
     }
   };
+  const toggleNavVisibility = () => {
+    setIsNavVisible(!isNavVisible);
+  };
 
-    return (
-      <nav className={styles.nav}>
+    return (<>
+      <button onClick={toggleNavVisibility} className={styles.menuButton}>
+        <div className={styles.menuIcon}>icon.svg</div></button>
+      <nav className={`${styles.nav} ${isNavVisible ? styles.visible : ''}`}>
       <ul className={styles.navList}>
       <li className={styles.navItem}>
           <button onClick={() => handleClick('/aboutus', 'aboutus-section')}>O nas</button>
@@ -41,7 +64,7 @@ const Navigation = () => {
           <button onClick={() => handleClick('/contact', 'contact-section')}>Kontakt</button>
         </li>
       </ul>
-      </nav>
+      </nav></>
     );
   };
 
