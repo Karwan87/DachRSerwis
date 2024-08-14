@@ -14,8 +14,10 @@ const AboutUs = () => {
         <div className={styles.title}>O nas</div>
         <div className={styles.details}>
   <h1>Dach R Serwis</h1>
-  <h2>Twoje Zaufane Źródło Profesjonalnych Usług Dekarskich i Ciesielskich</h2>
+  <div className={styles.content}>
+    <h2>Twoje Zaufane Źródło Profesjonalnych Usług Dekarskich i Ciesielskich</h2>
   <p>Z dumą przedstawiamy firmę Dach R Serwis, która od ponad 20 lat dostarcza najwyższej jakości usługi dekarskie i ciesielskie. Nasza firma łączy w sobie doświadczenie, precyzję oraz pasję do wykonywania prac na najwyższym poziomie. Dzięki naszemu zaangażowaniu i indywidualnemu podejściu do każdego projektu, zyskaliśmy zaufanie setek klientów.</p>
+  </div>
   <h3>Dlaczego Warto Wybrać Dach R Serwis</h3>
   <div className={styles.aboutus_container}>
   <div className={styles.box}>
@@ -51,11 +53,11 @@ const AboutUs = () => {
     </div>
     </div>
 </div>
-
+<div className={styles.content}>
   <p>Zapraszamy do współpracy z naszą firmą – zaufanym partnerem w dziedzinie usług dekarskich i ciesielskich.</p>
   <p> Skontaktuj się z nami już dziś za pomocą formularza na stronie lub przez zakładkę "KONTAKT", aby uzyskać darmową wycenę i dowiedzieć się więcej o naszej ofercie.</p>
   <h2 className={styles.over}>Twój dach jest w dobrych rękach!</h2>
-</div>
+</div></div>
 
         </div>
     );
