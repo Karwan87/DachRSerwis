@@ -8,7 +8,7 @@
     top: 62px;
     right: 66px; 
     z-index: 9;
-    background: rgb(247, 245, 245);
+    background: white;
     box-shadow: 14px 12px 12px 6px rgba(100, 100, 100, 0.5);
   }
 
@@ -21,36 +21,43 @@
   .menuButton {
     display: flex;
     background: none;
-    border: 1px solid red; 
+    border: none;
     font-size: 12px;
     justify-content:flex-end;
   }
   .menuIcon {
     position:relative;
+    border: 1px blue solid;
     width: 50px;
     height: 50px;
-    border: 1px solid blue; 
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 7px 5px 5px 2px rgba(100, 100, 100, 0.5);
+    transition: transform 0.3s ease, font-weight 0.3s ease;
+  }
+  .menuIcon:hover {
+    transform: scale(1.2);
+    
   }
   .navList {
     list-style: none;
     display: flex;
     flex-direction: column;
+    background: none;
     gap: 25px;
-    width: 100%;
+    width: 80%;
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
+    padding: auto 0;
   }
 
   .navItem {
     flex: 1; 
     text-align: center; 
-    text-shadow: 2px 2px #cecece;
+    text-shadow: 3px 2px #aaa8a8;
 width: 100%;
   }
   .navItem button {
@@ -59,13 +66,13 @@ width: 100%;
     background: none;
     border: none;
     text-decoration: none;
-    font-size: 24px;
-    border: 1px solid red; 
+    text-shadow: 6px 5px 5px 3px rgba(100, 100, 100, 0.5);
+    font-size: 16px;
     width: 100%;
     transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
   }
   .navItem button:hover {
-    transform: scale(1.5); 
+    transform: scale(1.1); 
     font-weight: bold; 
     cursor: pointer;
     text-shadow: 1px 1px #99999b;
@@ -96,13 +103,8 @@ width: 100%;
   @media (min-width: 1280px) {
     .nav {
                margin: auto;} 
+               .navItem button{
+font-size: 24px;
+               }
   }
-  /* @media (min-height: 100vh) {
-    body {
-      height: 135vh;
-      margin: 0;
-      padding: 0;
-    }
-
-  } */
   
