@@ -15,8 +15,7 @@ const Services = () => {
     }, []);
     return (
         <div id="services-section" className={styles.servicesContainer}>
-            <div  className={styles.title}>Usługi</div>
-            <div className={styles.details}>
+            <div  className={styles.title}><h1>Usługi</h1></div>
                 <div className={styles.offers}>
                 <div className={styles.offer_first}>
                     <img src={Services1} alt="Oferta Dekarska" className={styles.imageLeft} />
@@ -50,7 +49,6 @@ const Services = () => {
                         </ul>
                     </div>
                     </div>
-                </div>
             </div>
         </div>
     );
