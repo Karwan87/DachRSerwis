@@ -1,7 +1,7 @@
    .nav {
     opacity: 0;
     max-height: 0;
-    overflow: hidden; 
+    /* overflow: hidden;  */
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out; 
     width: 50%;
     position:fixed;
@@ -103,6 +103,12 @@ width: 100%;
   @media (min-width: 1280px) {
     .nav {
                margin: auto;} 
+               .nav.visible {
+                opacity: 1;
+                max-height: 500px; /* Adjust to fit content */
+                overflow: auto; /* Allow scroll if content overflows */
+                transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+              }
                .navItem button{
 font-size: 24px;
                }
