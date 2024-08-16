@@ -3,8 +3,8 @@ import styles from './services.module.css';
 import "@fontsource/montserrat";
 
 // Import the images using the correct paths
-import Services1 from '../../pictures/Services1.jpg';
-import Services2 from '../../pictures/Services2.jpg';
+import Services1 from '../../pictures/Services2.jpg';
+import Services2 from '../../pictures/Services1.jpg';
 
 const Services = () => {
     useEffect(() => {

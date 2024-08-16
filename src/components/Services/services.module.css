@@ -60,6 +60,7 @@
     max-width: 480px;
     line-height: 125%;
     text-align: justify;
+    
 }
 
 .imageLeft, .imageRight {
@@ -67,6 +68,7 @@
     height: auto;
     border-radius: 8px;
     box-shadow: 12px 12px 14px rgba(0, 0, 0, 0.8);
+    margin-bottom: 35px;
 }
 
 .imageLeft {
@@ -129,15 +131,19 @@
         flex-direction:row-reverse;
         width: 90%;
         margin: auto;
+        align-items: top;
     }
+    
         .imageLeft {
-            max-width: 50%
+            max-width: 50%;
+            height: 50%;
+            
         }
         .imageRight {
             max-width: 50%
         }
-        
+
 }
 h2 {
-    margin: 50px;
+    margin: 0 50px;
 }
