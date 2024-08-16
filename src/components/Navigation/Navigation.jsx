@@ -34,14 +34,19 @@ const Navigation = () => {
       setTimeout(() => {
         const section = document.getElementById(sectionId);
         if (section) {
+          console.log(`Navigated and found section: ${sectionId}`);
           section.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.log(`Navigated but section not found: ${sectionId}`);
         }
-      }, 200); 
+      }, 500);
     }
+
     if (window.innerWidth < 768) {
       toggleNavVisibility(); 
     }
   };
+  
   const toggleNavVisibility = () => {
     setIsNavVisible(!isNavVisible);
   };
@@ -52,7 +57,7 @@ const Navigation = () => {
       <nav className={`${styles.nav} ${isNavVisible ? styles.visible : ''}`}>
       <ul className={styles.navList}>
       <li className={styles.navItem}>
-          <button onClick={() => handleClick('/aboutus', 'aboutus-section')}>O nas</button>
+          <button onClick={() => handleClick('/aboutus', 'about-us-section')}>O nas</button>
         </li>
         <li className={styles.navItem}>
           <button onClick={() => handleClick('/services', 'services-section')}>Usługi</button>

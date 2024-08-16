@@ -3,15 +3,15 @@ import styles from './contact.module.css';
 import "@fontsource/montserrat";
 const Contact = () => {
     useEffect(() => {
-        const contactSection = document.getElementById('contact-section');
+        const contactSection = document.getElementById('contactSection');
         if (contactSection) {
             contactSection.scrollIntoView({ behavior: 'smooth' });
         }
     }, []);
     return (
-        <div className={styles.contactContainer}>
+        <div id="contact-section" className={styles.contactContainer}>
      
-        <div id="contact-section" className={styles.contactSection}>
+        <div className={styles.contactSection}>
         <div className={styles.title}>
             <h1>Kontakt</h1>
             <p>DACH RSERWIS ROMAN SZELIGA</p>

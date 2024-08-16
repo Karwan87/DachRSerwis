@@ -8,7 +8,7 @@ import Services2 from '../../pictures/Services1.jpg';
 
 const Services = () => {
     useEffect(() => {
-        const servicesSection = document.getElementById('services-section');
+        const servicesSection = document.getElementById('servicesSection');
         if (servicesSection) {
             servicesSection.scrollIntoView({ behavior: 'smooth' });
         }

@@ -4,7 +4,7 @@ import styles from './portfolio.module.css';
 
 const Portfolio = () => {
   useEffect(() => {
-    const portfolioSection = document.getElementById('portfolio-section');
+    const portfolioSection = document.getElementById('portfolioSection');
     if (portfolioSection) {
         portfolioSection.scrollIntoView({ behavior: 'smooth' });
     }

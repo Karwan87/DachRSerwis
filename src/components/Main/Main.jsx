@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useLayoutEffect} from "react";
 import { useLocation } from "react-router-dom";
 import styles from './main.module.css';
 import mobileLogo from '../../pictures/DachRserwis desktop LOGO.jpg';
@@ -10,7 +10,7 @@ const Main = () => {
     const [logo, setLogo] = useState(mobileLogo);
     const [scrollOpacity, setScrollOpacity] = useState(1);
     const location = useLocation(); 
-    const opacityThreshold = 100; 
+    const opacityThreshold = 800; 
 
     const updateLogo = () => {
     const width = window.innerWidth;
@@ -39,6 +39,11 @@ const handleScroll = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    // Reset scrollOpacity and scroll position whenever the route changes
+    useLayoutEffect(() => {
+        setScrollOpacity(1);
+        window.scrollTo(0, 0);  // Reset scroll position to top
+    }, [location.pathname]);
 
     useEffect(() => {
         if (location.pathname === '/') {
@@ -46,7 +51,8 @@ const handleScroll = () => {
         } else {
             document.body.style.overflow = 'auto'; 
         }
-    }, [location.pathname]); 
+    }, [location.pathname]);
+
 
     return (
         <div className={styles.container}>

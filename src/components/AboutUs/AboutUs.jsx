@@ -4,13 +4,13 @@ import "@fontsource/montserrat";
 
 const AboutUs = () => {
   useEffect(() => {
-    const aboutUsSection = document.getElementById('aboutUs-section');
-    if (aboutUsSection) {
-        aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+    const AboutUsSection = document.getElementById('AboutUsSection');
+    if (AboutUsSection) {
+      AboutUsSection.scrollIntoView({ behavior: 'smooth' });
     }
 }, []);
     return (
-        <div id="aboutus-section" className={styles.aboutusContainer}>
+        <div id="about-us-section" className={styles.aboutusContainer}>
         <div className={styles.title}>
           <h1>O nas</h1></div>
         <div className={styles.details}>
