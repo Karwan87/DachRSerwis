@@ -52,7 +52,8 @@
 @media (min-width: 768px) {
     .title {
         font-size: 18px;
-        min-width: 85vw;
+        min-width: 70vw;
+        max-width: 85vw;
     }
     .contactSection { 
         font-size: 24px;

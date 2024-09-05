@@ -36,10 +36,10 @@ const Contact = () => {
      
         <div className={styles.contactSection}>
         
-        <div id="contact" className={styles.title}>
+        <div className={styles.title}>
           <h1>Napisz do nas</h1>
           <div className={styles.contactWrapper}>
-            <form id="contact-form" className={styles.formHorizontal} role="form" onSubmit={handleSubmit}>
+            <form className={styles.formHorizontal} onSubmit={handleSubmit}>
               <div className={styles.formGroup}>
                 <div className={styles.textArea}>
                   <input type="text" className={styles.formControl}
