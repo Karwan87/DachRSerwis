@@ -36,15 +36,13 @@ const Contact = () => {
      
         <div className={styles.contactSection}>
         
-        <div section id="contact" className={styles.title}>
+        <div id="contact" className={styles.title}>
           <h1>Napisz do nas</h1>
           <div className={styles.contactWrapper}>
             <form id="contact-form" className={styles.formHorizontal} role="form" onSubmit={handleSubmit}>
               <div className={styles.formGroup}>
                 <div className={styles.textArea}>
-                  <input
-                    type="text"
-                    className={styles.formControl}
+                  <input type="text" className={styles.formControl}
                     id="name"
                     placeholder="NAME"
                     name="name"
@@ -56,9 +54,7 @@ const Contact = () => {
         </div>
         <div className={styles.formGroup}>
                 <div className={styles.textArea}>
-                  <input
-                    type="email"
-                    className={styles.formControl}
+                  <input type="email" className={styles.formControl}
                     id="email"
                     placeholder="EMAIL"
                     name="email"
@@ -69,8 +65,7 @@ const Contact = () => {
                 </div>
     </div> 
     <div></div>
-    <div className={styles.messageWindow}><textarea
-                className={styles.formControl}
+    <div className={styles.messageWindow}><textarea className={styles.formControl}
                 rows="10"
                 placeholder="MESSAGE"
                 name="message"
