@@ -76,7 +76,9 @@ const Contact = () => {
 
               <button className={styles.sendButton} id="submit" type="submit">
                 <div className={styles.altSendButton}>
-                  <FontAwesomeIcon icon={faPaperPlane} /><span className={styles.altSendButton}>WYŚLIJ WIADOMOŚĆ</span>
+                  <FontAwesomeIcon icon={faPaperPlane} />
+                  <span className={styles.altSendButton}>WYŚLIJ</span>
+                  
                 </div>
               </button></div>
             </form>
@@ -90,13 +92,15 @@ const Contact = () => {
                 <div className={styles.icons}><FontAwesomeIcon icon={faMapMarkerAlt} /></div><span>59-400 Jawor, Polska</span>
                 </li>
                 <li className={styles.listItem}>
-                <div className={styles.icons}> <FontAwesomeIcon icon={faPhone} /></div><span>
-                    <a href="tel:+48605 104 555" title="Masz pytania? Zadzwoń">+48 605 104 555</a>
+                <div className={styles.icons}> <FontAwesomeIcon icon={faPhone} /></div>
+                <span>
+                    <a className={styles.linkScale} href="tel:+48605 104 555" title="Masz pytania? Zadzwoń">+48 605 104 555</a>
                   </span>
                 </li>
                 <li className={styles.listItem}>
-                <div className={styles.icons}> <FontAwesomeIcon icon={faEnvelope} /></div><span>
-                    <a href="mailto:#" title="Napisz, czego potrzebujesz, doradzimy.">dachrserwis@o2.pl</a>
+                <div className={styles.icons}> <FontAwesomeIcon icon={faEnvelope} /></div>
+                <span>
+                    <a className={styles.linkScale} href="mailto:#" title="Napisz, czego potrzebujesz, doradzimy.">dachrserwis@o2.pl</a>
                   </span>
                 </li>
               </ul>
