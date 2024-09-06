@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DachRSerwis/static/css/main.27b0780e.css",
-    "main.js": "/DachRSerwis/static/js/main.88dde9a3.js",
+    "main.css": "/DachRSerwis/static/css/main.ecc4db5b.css",
+    "main.js": "/DachRSerwis/static/js/main.c16df8da.js",
     "static/media/Services2.jpg": "/DachRSerwis/static/media/Services2.17e8e869e33786359d60.jpg",
     "static/media/Services1.jpg": "/DachRSerwis/static/media/Services1.7751fffd76d0b0ddb3ef.jpg",
     "static/media/jawor_panorama2.jpg": "/DachRSerwis/static/media/jawor_panorama2.869300082b05865d5633.jpg",
@@ -17,11 +17,11 @@
     "static/media/montserrat-vietnamese-400-normal.woff": "/DachRSerwis/static/media/montserrat-vietnamese-400-normal.44e6450ead6330cb0b77.woff",
     "static/media/montserrat-vietnamese-400-normal.woff2": "/DachRSerwis/static/media/montserrat-vietnamese-400-normal.176348415471f3e062e6.woff2",
     "index.html": "/DachRSerwis/index.html",
-    "main.27b0780e.css.map": "/DachRSerwis/static/css/main.27b0780e.css.map",
-    "main.88dde9a3.js.map": "/DachRSerwis/static/js/main.88dde9a3.js.map"
+    "main.ecc4db5b.css.map": "/DachRSerwis/static/css/main.ecc4db5b.css.map",
+    "main.c16df8da.js.map": "/DachRSerwis/static/js/main.c16df8da.js.map"
   },
   "entrypoints": [
-    "static/css/main.27b0780e.css",
-    "static/js/main.88dde9a3.js"
+    "static/css/main.ecc4db5b.css",
+    "static/js/main.c16df8da.js"
   ]
 }
