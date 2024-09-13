@@ -97,7 +97,13 @@
     padding: 10px;
     transition: transform 0.3s ease, font-weight 0.3s ease;
 }
-
+.icon {
+    display: flex;
+    fill: black;
+    stroke: black;
+    width: 250px;
+    height: 250px;
+}
 
 .experience_icon {
     display: flex;

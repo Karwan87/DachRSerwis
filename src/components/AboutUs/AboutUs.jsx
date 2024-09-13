@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import styles from './aboutus.module.css';
 import "@fontsource/montserrat";
+import {ReactComponent as Icon} from '../../assets/SVG/symbol-defs.svg'
 
 const AboutUs = () => {
   useEffect(() => {
@@ -24,7 +25,8 @@ const AboutUs = () => {
   <div className={styles.box}>
     <div className={styles.box_title}>DOŚWIADCZENIE</div>
     <div className={styles.box_content}>
-    <div className={styles.experience_icon}>icon.svg
+    <div className={styles.experience_icon}> ison.svg
+      
     </div>
     <div className={styles.box_description}>20 lat w branży dekarskiej i ciesielskiej</div>
     </div>
