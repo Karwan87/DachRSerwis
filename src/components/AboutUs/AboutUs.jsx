@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import styles from './aboutus.module.css';
 import "@fontsource/montserrat";
-import {ReactComponent as Icon} from '../../assets/SVG/symbol-defs.svg'
 
 const AboutUs = () => {
   useEffect(() => {

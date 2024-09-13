@@ -98,11 +98,10 @@
     transition: transform 0.3s ease, font-weight 0.3s ease;
 }
 .icon {
-    display: flex;
-    fill: black;
+    fill: black; /* Możesz dostosować kolor ikon */
     stroke: black;
-    width: 250px;
-    height: 250px;
+    width: 24px; /* Domyślny rozmiar */
+    height: 24px;
 }
 
 .experience_icon {
